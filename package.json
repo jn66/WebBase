@@ -1,16 +1,16 @@
 {
-  "name": "mobilebase",
-  "version": "1.4.0",
-  "description": "Lenovo Service MobileBase",
+  "name": "web-Base",
+  "version": "1.0.0",
+  "description": "the Web base of Johnny",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "mobilebase",
-    "lenovo"
+    "webBase",
+    "Johnny"
   ],
-  "author": "Kevin-maxiu",
+  "author": "Johnny",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.13.0",

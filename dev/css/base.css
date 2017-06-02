@@ -1,0 +1,798 @@
+@charset "UTF-8";
+
+/*
+* @Author: kevin
+* @Date:   2016-04-05 13:37:33
+* @Last Modified by:   kevin
+* @Last Modified time: 2016-08-02 15:22:54
+*/
+
+/* 样式重置 */
+
+/*
+* @Author: kevin
+* @Date:   2016-04-05 13:37:33
+* @Last Modified by:   kevin
+* @Last Modified time: 2016-08-24 11:25:43
+* @参考地址: http://www.w3cplus.com/mobile/mobile-terminal-refactoring-reset-style.html
+*/
+
+html {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+a {
+  background: transparent;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  color: #0088cc;
+}
+
+a:active {
+  outline: 0;
+}
+
+a:active {
+  color: #006699;
+}
+
+abbr[title] {
+  border-bottom: 0.013333rem dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: border-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 0.013333rem solid #c0c0c0;
+  margin: 0 0.026667rem;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+form,
+blockquote {
+  margin: 0;
+}
+
+ul,
+ol,
+li,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none outside none;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 2;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 色板 */
+
+/*
+* @Author: kevin
+* @Date:   2016-04-05 13:37:33
+* @Last Modified by:   kevin
+* @Last Modified time: 2016-04-05 14:32:52
+* @参考地址: http://flatuicolors.com/
+*/
+
+/* 规则 */
+
+/*
+* @Author: kevin
+* @Date:   2016-04-05 13:37:33
+* @Last Modified by:   kevin
+* @Last Modified time: 2016-08-02 15:21:57
+*/
+
+/**
+ * 左右margin为auto
+ */
+
+/**
+ * 水平居中
+ * @param  {number} $width 设置宽度,默认90%
+ */
+
+/* 工具类 */
+
+/*
+* @Author: kevin
+* @Date:   2016-04-05 13:37:33
+* @Last Modified by:   kevin
+* @Last Modified time: 2016-08-02 15:20:56
+*/
+
+/**
+ * 隐藏元素
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/**
+ * 弹性图片
+ */
+
+.lnv-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/**
+ * 清除浮动
+ */
+
+.clear {
+  clear: both;
+}
+
+/**
+ * 解決高度塌陷問題
+ */
+
+.clearfix:after {
+  content: ' ';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+/**
+ * 单行文本超过宽度显示为三个点
+ */
+
+.dot {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/**
+ * 三角符号
+ */
+
+.lnv-triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.026667rem;
+  vertical-align: middle;
+  border-top: 0.053333rem dashed;
+  border-top: 0.053333rem solid \9;
+  border-right: 0.053333rem solid transparent;
+  border-left: 0.053333rem solid transparent;
+}
+
+.noselect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* 动画效果 */
+
+/*
+* @Author: kevin
+* @Date:   2016-04-05 13:37:33
+* @Last Modified by:   kevin
+* @Last Modified time: 2016-09-04 13:18:20
+*/
+
+/* 组件库 */
+
+/*
+* @Author: kevin
+* @Date:   2015-11-30 19:14:34
+* @Last Modified by:   kevin
+* @Last Modified time: 2016-09-04 13:53:25
+*/
+
+/* example 根据项目进行完善*/
+
+.lnv-btn {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.186667rem;
+  padding-right: 0.186667rem;
+  box-sizing: border-box;
+  font-size: 0.32rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  vertical-align: middle;
+  border-radius: 0.106667rem;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+}
+
+.lnv-btn-disabled {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.lnv-btn-disabled:active {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.lnv-btn-primary {
+  background-color: #04BE02;
+}
+
+.lnv-btn-primary:not(.lnv-btn-disabled):visited {
+  color: #fff;
+}
+
+.lnv-btn-primary:not(.lnv-btn-disabled):active {
+  color: rgba(255, 255, 255, 0.4);
+  background-color: #039702;
+}
+
+.lnv-btn-warn {
+  background-color: #EF4F4F;
+}
+
+.lnv-btn-warn:not(.btn-disabled):visited {
+  color: #fff;
+}
+
+.lnv-btn-warn:not(.lnv-btn-disabled):active {
+  color: rgba(255, 255, 255, 0.4);
+  background-color: #C13E3E;
+}
+
+.lnv-btn + .lnv-btn {
+  margin-top: 0.2rem;
+}
+
+button.lnv-btn,
+input.lnv-btn {
+  width: 100%;
+  border-width: 0;
+  outline: 0;
+  -webkit-appearance: none;
+}
+
+button.lnv-btn:focus,
+input.lnv-btn:focus {
+  outline: 0;
+}
+
+/* loading */
+
+/*
+* @Author: kevin
+* @Date:   2016-04-05 13:37:33
+* @Last Modified by:   kevin
+* @Last Modified time: 2016-08-02 15:21:37
+*/
+
+/*!
+ * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
+ * Copyright 2015 Daniel Cardoso <@DanielCardoso>
+ * Licensed under MIT
+ */
+
+.la-ball-atom,
+.la-ball-atom > div {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.la-ball-atom {
+  display: block;
+  font-size: 0;
+  color: #fff;
+}
+
+.la-ball-atom.la-dark {
+  color: #333;
+}
+
+.la-ball-atom > div {
+  display: inline-block;
+  float: none;
+  background-color: currentColor;
+  border: 0 solid currentColor;
+}
+
+.la-ball-atom {
+  width: 0.426667rem;
+  height: 0.426667rem;
+}
+
+.la-ball-atom > div:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 60%;
+  height: 60%;
+  background: #aaa;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-animation: ball-atom-shrink 4.5s infinite linear;
+  animation: ball-atom-shrink 4.5s infinite linear;
+}
+
+.la-ball-atom > div:not(:nth-child(1)) {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: none;
+  -webkit-animation: ball-atom-zindex 1.5s 0s infinite steps(2, end);
+  animation: ball-atom-zindex 1.5s 0s infinite steps(2, end);
+}
+
+.la-ball-atom > div:not(:nth-child(1)):before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.133333rem;
+  height: 0.133333rem;
+  margin-top: -0.066667rem;
+  margin-left: -0.066667rem;
+  content: "";
+  background: currentColor;
+  border-radius: 50%;
+  opacity: .75;
+  -webkit-animation: ball-atom-position 1.5s 0s infinite ease, ball-atom-size 1.5s 0s infinite ease;
+  animation: ball-atom-position 1.5s 0s infinite ease, ball-atom-size 1.5s 0s infinite ease;
+}
+
+.la-ball-atom > div:nth-child(2) {
+  -webkit-animation-delay: .75s;
+  animation-delay: .75s;
+}
+
+.la-ball-atom > div:nth-child(2):before {
+  -webkit-animation-delay: 0s, -1.125s;
+  animation-delay: 0s, -1.125s;
+}
+
+.la-ball-atom > div:nth-child(3) {
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg);
+  -webkit-animation-delay: -.25s;
+  animation-delay: -.25s;
+}
+
+.la-ball-atom > div:nth-child(3):before {
+  -webkit-animation-delay: -1s, -.75s;
+  animation-delay: -1s, -.75s;
+}
+
+.la-ball-atom > div:nth-child(4) {
+  -webkit-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  transform: rotate(240deg);
+  -webkit-animation-delay: .25s;
+  animation-delay: .25s;
+}
+
+.la-ball-atom > div:nth-child(4):before {
+  -webkit-animation-delay: -.5s, -.125s;
+  animation-delay: -.5s, -.125s;
+}
+
+.la-ball-atom.la-sm {
+  width: 0.213333rem;
+  height: 0.213333rem;
+}
+
+.la-ball-atom.la-sm > div:not(:nth-child(1)):before {
+  width: 0.053333rem;
+  height: 0.053333rem;
+  margin-top: -0.026667rem;
+  margin-left: -0.026667rem;
+}
+
+.la-ball-atom.la-2x {
+  width: 0.853333rem;
+  height: 0.853333rem;
+}
+
+.la-ball-atom.la-2x > div:not(:nth-child(1)):before {
+  width: 0.266667rem;
+  height: 0.266667rem;
+  margin-top: -0.133333rem;
+  margin-left: -0.133333rem;
+}
+
+.la-ball-atom.la-3x {
+  width: 1.28rem;
+  height: 1.28rem;
+}
+
+.la-ball-atom.la-3x > div:not(:nth-child(1)):before {
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-top: -0.2rem;
+  margin-left: -0.2rem;
+}
+
+/*
+ * Animations
+ */
+
+@-webkit-keyframes ball-atom-position {
+  50% {
+    top: 100%;
+    left: 100%;
+  }
+}
+
+@keyframes ball-atom-position {
+  50% {
+    top: 100%;
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes ball-atom-size {
+  50% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+}
+
+@keyframes ball-atom-size {
+  50% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+}
+
+@-webkit-keyframes ball-atom-zindex {
+  50% {
+    z-index: 10;
+  }
+}
+
+@keyframes ball-atom-zindex {
+  50% {
+    z-index: 10;
+  }
+}
+
+@-webkit-keyframes ball-atom-shrink {
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(0.8, 0.8);
+    transform: translate(-50%, -50%) scale(0.8, 0.8);
+  }
+}
+
+@keyframes ball-atom-shrink {
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(0.8, 0.8);
+    transform: translate(-50%, -50%) scale(0.8, 0.8);
+  }
+}
+
+/* icon */
+
+/*
+* @Author: kevin
+* @Date:   2016-04-05 13:37:33
+* @Last Modified by:   kevin
+* @Last Modified time: 2016-09-04 13:26:07
+*/
+
+/* icon */
+
+@font-face {
+  font-family: "iconfont";
+  src: url("../font/iconfont.eot");
+  /* IE9*/
+  src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"), url("../font/iconfont.woff") format("woff"), url("../font/iconfont.ttf") format("truetype"), url("../font/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */
+}
+
+.icon {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  transition: font-size 0.25s ease-out 0s;
+}
+
+/* public style */
+
+/*
+* @Author: kevin
+* @Date:   2016-04-05 13:37:33
+* @Last Modified by:   kevin
+* @Last Modified time: 2016-08-24 11:25:52
+*/
+
+body {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #333333;
+  background-color: white;
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+.noscroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+.loading {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #cccccc;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #cccccc;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #cccccc;
+}

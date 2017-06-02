@@ -1,5 +1,5 @@
 {
-  "name": "web-Base",
+  "name": "webBase",
   "version": "1.0.0",
   "description": "the Web base of Johnny",
   "main": "index.js",

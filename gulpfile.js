@@ -357,9 +357,11 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('default', gulpSequence(
+    ['dev_clean'], ['dev_sass', ], ['watch:scss']
+));
+gulp.task('default1', gulpSequence(
     ['dev_clean'], ['dev_html', 'dev_sass', 'dev_others:static', 'dev_others:js', 'dev_others:widget', 'dev_others:font', 'dev_img', 'dev_sprite'], ['watch:html', 'watch:include', 'watch:scss', 'watch:others', 'watch:dev', 'watch:js', 'watch:sprite', 'watch:tpl'], ['browser-sync']
 ));
-
 var condition = false;
 
 if (!!config.rooturl) {

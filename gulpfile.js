@@ -37,6 +37,7 @@ var path = {
         dev: "dev/",
         build: "build/"
     },
+    // 工作目录
     src: {
         static: "src/static/",
         scss: "src/scss/",
@@ -47,6 +48,7 @@ var path = {
         tpl: "src/tpl/",
         img: "src/img/"
     },
+    // 开发测试目录
     dev: {
         static: "dev/static/",
         css: "dev/css/",
@@ -55,6 +57,7 @@ var path = {
         font: "dev/font/",
         img: "dev/img/"
     },
+    //最终上线目录
     build: {
         static: "build/static/",
         css: "build/css/",
@@ -73,8 +76,8 @@ var path = {
  */
 
 gulp.task('dev_sass', function() {
-
-    var processors = [px2rem({ remUnit: 75 })];
+    //移动端开启，像素转rm
+    //var processors = [px2rem({ remUnit: 75 })];
 
     return gulp.src(path.src.scss + "*.scss")
         .pipe(sass().on('error', sass.logError))
@@ -82,10 +85,11 @@ gulp.task('dev_sass', function() {
             browsers: ['last 5 versions'],
             cascade: false
         }))
-        .pipe(postcss(processors))
+        //移动端开启，像素转rm
+        //.pipe(postcss(processors))
         .pipe(gulp.dest(path.dev.css))
         .pipe(notify({
-            message: 'scss文件编译成功'
+            message: '中国知网-scss文件编译成功'
         }))
 
 });
@@ -357,7 +361,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('default', gulpSequence(
-    ['dev_clean'], ['dev_sass', ], ['watch:scss']
+    ['dev_clean'], ['dev_html','dev_sass' ], ['watch:html', 'watch:include','watch:scss']
 ));
 gulp.task('default1', gulpSequence(
     ['dev_clean'], ['dev_html', 'dev_sass', 'dev_others:static', 'dev_others:js', 'dev_others:widget', 'dev_others:font', 'dev_img', 'dev_sprite'], ['watch:html', 'watch:include', 'watch:scss', 'watch:others', 'watch:dev', 'watch:js', 'watch:sprite', 'watch:tpl'], ['browser-sync']

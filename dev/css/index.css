@@ -1,105 +1,81 @@
 @charset "UTF-8";
-
 /* 规则 */
-
 /*
 * @Author: kevin
 * @Date:   2016-04-05 13:37:33
 * @Last Modified by:   kevin
 * @Last Modified time: 2016-08-02 15:21:57
 */
-
 /**
  * 左右margin为auto
  */
-
-.icon_lists,
-.sprite-list {
+.icon_lists, .sprite-list {
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 /**
  * 水平居中
  * @param  {number} $width 设置宽度,默认90%
  */
-
 .sprite {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-size: 4.04rem 2.44rem;
-}
+  background-size: 303px 183px; }
 
 /* 服务工单列表页面 */
-
 .main {
-  padding: 0.266667rem;
-}
+  padding: 20px; }
 
 .icon_lists {
-  width: 9.333333rem;
-}
+  width: 700px; }
 
 .icon_lists li {
   float: left;
-  width: 1.333333rem;
-  height: 1.333333rem;
-  text-align: center;
-}
+  width: 100px;
+  height: 100px;
+  text-align: center; }
 
 .icon_lists .icon {
-  font-size: 0.56rem;
-  line-height: 1.333333rem;
-  margin: 0.133333rem 0;
+  font-size: 42px;
+  line-height: 100px;
+  margin: 10px 0;
   color: #333;
-  transition: font-size 0.25s ease-out 0s;
-}
+  transition: font-size 0.25s ease-out 0s; }
 
 .icon_lists .icon:hover {
-  font-size: 1.333333rem;
-}
+  font-size: 100px; }
 
 .base_list {
   text-align: center;
-  font-size: 0.346667rem;
-}
+  font-size: 26px; }
 
 .btn_wrap {
-  margin-top: 0.266667rem;
-}
+  margin-top: 20px; }
 
 .sprite-list {
-  width: 8rem;
-}
+  width: 600px; }
 
 .sprite {
-  width: 1.333333rem;
-  height: 1.066667rem;
+  width: 100px;
+  height: 80px;
   float: left;
-  margin-top: 0.266667rem;
-  margin-bottom: 0.266667rem;
-}
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .sprite-item1 {
-  background-position: -1.586667rem 0;
-}
+  background-position: -119px 0px; }
 
 .sprite-item2 {
-  background-position: 0 0;
-}
+  background-position: 0px 0px; }
 
 .sprite-item3 {
-  background-position: -1.346667rem -1.36rem;
-}
+  background-position: -101px -102px; }
 
 .sprite-item4 {
-  background-position: -2.933333rem 0;
-}
+  background-position: -220px 0px; }
 
 .sprite-item5 {
-  background-position: 0 -1.36rem;
-}
+  background-position: 0px -102px; }
 
 .sprite-item6 {
-  background-position: -2.933333rem -1.2rem;
-}
+  background-position: -220px -90px; }

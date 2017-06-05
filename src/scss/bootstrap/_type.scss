@@ -24,9 +24,9 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: $line-height-computed;
-  margin-bottom: ($line-height-computed / 2);
-
+  // margin-top: $line-height-computed;
+  // margin-bottom: ($line-height-computed / 2);
+  margin:0;
   small,
   .small {
     font-size: 65%;
@@ -35,9 +35,9 @@ h3, .h3 {
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: ($line-height-computed / 2);
-  margin-bottom: ($line-height-computed / 2);
-
+  // margin-top: ($line-height-computed / 2);
+  // margin-bottom: ($line-height-computed / 2);
+  margin:0;
   small,
   .small {
     font-size: 75%;
@@ -56,7 +56,8 @@ h6, .h6 { font-size: $font-size-h6; }
 // -------------------------
 
 p {
-  margin: 0 0 ($line-height-computed / 2);
+  // margin: 0 0 ($line-height-computed / 2);
+  margin: 0;
 }
 
 .lead {
@@ -150,6 +151,7 @@ ul,
 ol {
   margin-top: 0;
   margin-bottom: ($line-height-computed / 2);
+  margin-bottom: 0
   ul,
   ol {
     margin-bottom: 0;
